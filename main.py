@@ -21,3 +21,8 @@ async def test_endpoint():
 @app.get("/health-check")
 async def health_check():
     return {"status": "ok"}
+
+
+@app.get("/ping")
+async def ping():
+    return {"response": "pong"}
