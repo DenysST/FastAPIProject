@@ -11,3 +11,8 @@ async def root():
 @app.get("/hello/{name}")
 async def say_hello(name: str):
     return {"message": f"Hello {name}"}
+
+
+@app.get("/test-endpoint")
+async def test_endpoint():
+    return {"message": "This is a test endpoint."}
