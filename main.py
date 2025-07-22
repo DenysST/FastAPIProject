@@ -26,3 +26,8 @@ async def health_check():
 @app.get("/ping")
 async def ping():
     return {"response": "pong"}
+
+
+@app.get("/status")
+async def status():
+    return {"service": "running"}
