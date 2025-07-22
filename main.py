@@ -31,3 +31,8 @@ async def ping():
 @app.get("/status")
 async def status():
     return {"service": "running"}
+
+
+@app.get("/info")
+async def info():
+    return {"info": "test info"}
